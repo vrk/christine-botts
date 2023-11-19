@@ -17,4 +17,4 @@ On the raspberry pi:
 - [Set up GitHub ssh keys](https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278)
 - Clone this repo
 - cd into `christine-botts`
-- 
+- [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
