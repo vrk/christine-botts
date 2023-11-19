@@ -23,4 +23,6 @@ On the raspberry pi:
 - `python -m venv env`
 - `source env/bin/activate`
 - `pip install gpiozero`
+
+### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
