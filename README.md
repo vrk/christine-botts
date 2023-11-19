@@ -19,9 +19,9 @@ On the raspberry pi:
 - Clone this repo
 - cd into `christine-botts`
 - Try playing some audio thing: `play test-audio/piano2.wav`
-- `python -m venv env` then install the missing thing with sudo
-- `python -m venv env`
-- `source env/bin/activate`
+- `python3 -m venv .venv` then install the missing thing with sudo
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
 - `pip install gpiozero`
 
 ### Helpful documentation:
