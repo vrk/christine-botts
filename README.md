@@ -44,6 +44,7 @@ On the raspberry pi:
 
 - `echo "get battery" | nc -q 0 127.0.0.1 8423`
 - go to http://rpi.local:8421/
+- Reconfigure battery settings via: `sudo dpkg-reconfigure pisugar-server`
 
 ### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
