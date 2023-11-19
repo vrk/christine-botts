@@ -26,6 +26,7 @@ On the raspberry pi:
 - `sudo apt install python3-gpiozero` idk if this is needed, but gpiozero docs mention
 - `sudo apt install python3-sdl2 libsdl-ttf2.0-0`
   - it's possible this just needs to be `sudo apt install libsdl2-mixer-2.0-0`
+- `sudo pip3 install pygame --break-system-packages` -- needed for running script on sudo
 - [Start script on launch](https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup#method-1-rclocal)
   - `sudo vim nano /etc/rc.local`
   - add:
