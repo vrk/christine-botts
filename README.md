@@ -22,7 +22,8 @@ On the raspberry pi:
 - `python3 -m venv .venv` then install the missing thing with sudo
 - `python3 -m venv .venv`
 - `source .venv/bin/activate`
-- `pip install gpiozero`
+- `pip install gpiozero RPi.GPIO`
+- `sudo apt install python3-gpiozero` idk if this is needed, but gpiozero docs mention
 
 ### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
