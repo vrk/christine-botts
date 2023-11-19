@@ -28,7 +28,7 @@ On the raspberry pi:
   - it's possible this just needs to be `sudo apt install libsdl2-mixer-2.0-0`
 - `sudo pip3 install pygame --break-system-packages` -- needed for running script on sudo
 - [Start script on launch](https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup#method-1-rclocal)
-  - `sudo vim nano /etc/rc.local`
+  - `sudo vim /etc/rc.local`
   - add:
     ```
     source /home/vrk/christine-botts/.venv/bin/activate 
