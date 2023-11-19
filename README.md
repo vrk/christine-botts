@@ -31,7 +31,7 @@ On the raspberry pi:
   - `sudo vim /etc/rc.local`
   - add:
     ```
-    source /home/vrk/christine-botts/.venv/bin/activate 
+    sudo bash -c 'source /home/vrk/christine-botts/.venv/bin/activate > /home/vrk/blink1.log 2>&1' & 
     sudo python3 /home/vrk/christine-botts/audio-button.py &
     ```
 
