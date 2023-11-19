@@ -22,8 +22,10 @@ On the raspberry pi:
 - `python3 -m venv .venv` then install the missing thing with sudo
 - `python3 -m venv .venv`
 - `source .venv/bin/activate`
-- `pip install gpiozero RPi.GPIO`
+- `pip install gpiozero RPi.GPIO pygame`
 - `sudo apt install python3-gpiozero` idk if this is needed, but gpiozero docs mention
+- `sudo apt install python3-sdl2 libsdl-ttf2.0-0`
+  - it's possible this just needs to be `sudo apt install libsdl2-mixer-2.0-0`
 
 ### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
