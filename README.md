@@ -40,6 +40,11 @@ On the raspberry pi:
 1. get the process id: `sudo ps -ax | grep python`
 2. `sudo strace -p <PID> -e write`
 
+### Query pisugar battery
+
+- `echo "get battery" | nc -q 0 127.0.0.1 8423`
+- go to http://rpi.local:8421/
+
 ### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
 
