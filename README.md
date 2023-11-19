@@ -26,6 +26,19 @@ On the raspberry pi:
 - `sudo apt install python3-gpiozero` idk if this is needed, but gpiozero docs mention
 - `sudo apt install python3-sdl2 libsdl-ttf2.0-0`
   - it's possible this just needs to be `sudo apt install libsdl2-mixer-2.0-0`
+- [Start script on launch](https://learn.sparkfun.com/tutorials/how-to-run-a-raspberry-pi-program-on-startup#method-1-rclocal)
+  - `sudo vim nano /etc/rc.local`
+  - add:
+    ```
+    source /home/vrk/christine-botts/.venv/bin/activate 
+    sudo python3 /home/vrk/christine-botts/audio-button.py &
+    ```
+
+### Viewing logs of background process
+
+1. get the process id: `sudo ps -ax | grep python`
+2. `sudo strace -p <PID> -e write`
 
 ### Helpful documentation:
 - [Wiring a button](https://gpiozero.readthedocs.io/en/stable/recipes.html#button)
+
